@@ -19,6 +19,7 @@
   "homepage": "https://github.com/yom21c1020/school-petition#readme",
   "dependencies": {
     "fastify": "^3.9.2",
+    "fastify-cors": "^5.1.0",
     "fastify-formbody": "^5.0.0",
     "formbody": "^0.2.2",
     "knex": "^0.21.15",

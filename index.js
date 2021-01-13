@@ -1,5 +1,6 @@
 const fastify = require('fastify')({ logger: true });
 const fastifyFormbody = require('fastify-formbody');
+const fastifyCORS = require('fastify-cors');
 const db = require('./db');
 const config = require('./config');
 
@@ -13,6 +14,7 @@ const start = async () => {
 
     // Import plugins
     fastify.register(fastifyFormbody);
+    fastify.register(fastifyCORS);
 
     // Define routes
     fastify.route({
